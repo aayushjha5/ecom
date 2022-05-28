@@ -11,7 +11,7 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <>
-    <Announcement />
+    <Announcement text={'Super Deal! Free Shipping on Orders over ₹999'}/>
     <Navbar />
     <Slider />
     <Categories />

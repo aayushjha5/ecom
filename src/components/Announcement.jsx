@@ -11,10 +11,10 @@ height: 30px;
   font-weight: 500;
 `
 
-const Announcement = () => {
+const Announcement = ({text}) => {
   return (
     <Container>
-        Super Deal! Free Shipping on Orders over ₹999
+        {text}
     </Container>
   )
 }

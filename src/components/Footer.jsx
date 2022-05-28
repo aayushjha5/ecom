@@ -119,7 +119,7 @@ const Footer = () => {
       </ContactItem>
       <ContactItem>
        <Phone style={{marginRight:"10px"}} />
-      +91 987 654 3210
+        <a href="+919876543210" style={{color: 'teal'}}> +91 987 654 3210 </a>
       </ContactItem>
       <ContactItem>
       <MailOutline style={{marginRight:"10px"}} />
