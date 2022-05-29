@@ -10,7 +10,7 @@ res.send('user get test is successful');
 router.post('/userposttest', (req,res)=>{
     //taking user input
     const username = req.body.username;
-    console.log(username);
+    res.send("your username is: " + username);
 })
 
 module.exports = router
