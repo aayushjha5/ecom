@@ -7,6 +7,12 @@ const dotenv = require('dotenv');
 //importing routers
 const userRoute = require('./routes/user');
 const authRoute = require('./routes/auth');
+const productRoute = require('./routes/product');
+const cartRoute = require('./routes/cart');
+const orderRoute = require('./routes/order');
+
+
+
 
 
 //writing configuration for dotenv
@@ -39,3 +45,12 @@ app.use('/api/users', userRoute);
 
 //using authRoute
 app.use('/api/auth', authRoute);
+
+//using productRoute
+app.use('/api/products', productRoute);
+
+//using cartRoute
+app.use('/api/carts', cartRoute);
+
+//using orderRoute
+app.use('/api/orders', orderRoute);
