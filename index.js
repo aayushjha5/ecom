@@ -4,6 +4,8 @@ const express = require('express');
 const mongoose = require("mongoose");
 //using env files for security
 const dotenv = require('dotenv');
+//importing router - user
+const userRoute = require('./routes/user');
 
 //writing configuration for dotenv
 dotenv.config();
@@ -26,3 +28,9 @@ mongoose.connect(process.env.MONGO_URL).then(
     (err) => {
         console.log(err);
     }); 
+
+//for passing json file
+app.use(express.json());
+
+//using userRoute
+app.use('/api/users', userRoute);
