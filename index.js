@@ -4,8 +4,10 @@ const express = require('express');
 const mongoose = require("mongoose");
 //using env files for security
 const dotenv = require('dotenv');
-//importing router - user
+//importing routers
 const userRoute = require('./routes/user');
+const authRoute = require('./routes/auth');
+
 
 //writing configuration for dotenv
 dotenv.config();
@@ -34,3 +36,6 @@ app.use(express.json());
 
 //using userRoute
 app.use('/api/users', userRoute);
+
+//using authRoute
+app.use('/api/auth', authRoute);
